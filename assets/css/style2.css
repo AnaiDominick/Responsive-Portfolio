@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-image: url("../images/leaves-pattern.png");
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    
+}
+
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    top: 0;
+  }
+  
+  #logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+
+/* General */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+}
+
+#about {
+    float: right;
+    margin-right: 20px;
+    
+
+}
+
+#portfolio {
+    float: right;
+    margin-right: 20px;
+
+}
+
+#contact {
+    float: right;
+}
+
+#contactMe {
+    clear: both;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-bottom: 3px solid #888888;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 150px;
+    
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+   
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 100%;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    border: 3px solid #4aaaa5;
+}
+
+input[type=submit]:hover {
+	border: 3px dotted #4aaaa5;
+	color: #4aaaa5;
+	background: rgba(0,0,0,0);
+}
+
+textarea {
+    text-align: left;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+   
+}
+
+/* media */
+
+@media screen and (max-width: 980px){
+    body{
+        margin: auto;
+    }
+    #logo {
+        margin-left: auto;
+    }
+    nav {
+        margin-right: auto;
+    }
+    .container {
+        width: 780px;
+        margin-left: 5%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        margin: auto;
+    }
+    .container{
+        width: 668px;
+    }
+   
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body {
+        width: 100%;
+    }
+    .container{
+        width: 540px;
+    }
+    #logo {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+    }
+}
